@@ -1,0 +1,16 @@
+---
+## ------------------------------
+# Tasks for bash
+## ------------------------------
+
+- name: "Installing Bash using homebrew"
+  homebrew:
+    name: "bash"
+    state: "latest"
+
+- name: "Configuring shell to use bash"
+  shell: |
+    chsh -s /usr/local/bin/bash
+
+- debug:
+    msg: "Please close and reopen the terminal in order for changes to take effect."
