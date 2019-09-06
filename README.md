@@ -5,23 +5,24 @@ This role is for installing bash via homebrew and setting it as the default shel
 
 Requirements
 ------------
-
+- Ansible 2.8 or later
 
 Role Variables
 --------------
-
+none
 
 Dependencies
 ------------
-
 none
 
-Example Playbook
+
+Usage
 ----------------
-
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
+#### Include in playbook
     - hosts: localhost
       name: "Configuring your shell to use bash!"
       roles:
-         - role: bash
+         - role: dredizzle22.bash
+
+#### Install independently
+`ansible-pull -U https://github.com/DreDizzle22/ansible-role-bash.git`

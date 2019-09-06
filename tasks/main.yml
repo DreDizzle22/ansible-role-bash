@@ -3,7 +3,7 @@
 # Tasks for bash
 ## ------------------------------
 
-- name: "Installing Bash using homebrew"
+- name: "Installing bash using homebrew"
   homebrew:
     name: "bash"
     state: "latest"
